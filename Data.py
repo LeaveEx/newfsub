@@ -6,24 +6,11 @@ from pyrogram.types import InlineKeyboardButton
 
 class Data:
     HELP = """
-<b> ❏ Perintah untuk Pengguna BOT
- ├ /start - Mulai Bot
- ├ /about - Tentang Bot ini
- ├ /help - Bantuan Perintah Bot ini
- ├ /ping - Untuk mengecek bot hidup
- └ /uptime - Untuk melihat status bot 
- 
- ❏ Perintah Untuk Admin BOT
- ├ /logs - Untuk melihat logs bot
- ├ /setvar - Untuk mengatur var dengan command dibot
- ├ /delvar - Untuk menghapus var dengan command dibot
- ├ /getvar - Untuk melihat salah satu var dengan command dibot
- ├ /users - Untuk melihat statistik pengguna bot
- ├ /batch - Untuk membuat link lebih dari satu file
- ├ /speedtest - Untuk Mengetes kecepatan server bot
- └ /broadcast - Untuk mengirim pesan broadcast ke pengguna bot
-
-👨‍💻 Develoved by </b><a href='https://t.me/Lunatic0de/101'>@Lunatic0de</a>
+<b> ❏ Silahkan kirim pesan anda menggunakan hastag dibawah ini:
+ • #ctngirl [ untuk identitas perempuan ]
+ • #ctnboy  [ untuk identitas laki laki ]
+ • #ctnrandom  [ untuk pesan random ]
+ • #ctnmutualan [ untuk mutualan ]
 """
 
     close = [
@@ -32,26 +19,28 @@ class Data:
 
     mbuttons = [
         [
-            InlineKeyboardButton("ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help"),
+            InlineKeyboardButton("ʜᴇʟᴘ", callback_data="help"),
             InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close")
         ],
     ]
 
     buttons = [
         [
-            InlineKeyboardButton("ᴛᴇɴᴛᴀɴɢ sᴀʏᴀ", callback_data="about"),
+            InlineKeyboardButton("rules", callback_data="about"),
             InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close")
         ],
     ]
 
     ABOUT = """
-<b>Tentang Bot ini:
-
-@{} adalah Bot Telegram untuk menyimpan Postingan atau File yang dapat Diakses melalui Link Khusus.
-
- • Creator: @{}
- • Framework: <a href='https://docs.pyrogram.org'>Pyrogram</a>
- • Source Code: <a href='https://github.com/mrismanaziz/File-Sharing-Man'>File-Sharing-Man v4</a>
-
-👨‍💻 Develoved by </b><a href='https://t.me/Lunatic0de/101'>@Lunatic0de</a>
+RULES :
+1. DILARANG SARA / RUSUH / SPAM
+2. DILARANG MENGEMIS DANA DLL
+3. DILARANG PROMOSI LINK GROUP / LPM / BOT LAIN
+4. DILARANG FAKE PROMOTE MENGGUNAKAN USERNAME ORANG LAIN
+5. DILARANG SHARE NO WHATSAPP
+6. DILARANG OPEN VCS / JUAL KONTEN SELAIN TALENT RESMI FWBESS
+7, DILARANG JUAL DIRI
+— MELANGGAR = AUTO BANNED —
+INFO UNTUK MEMBER
+Semua pesan akan terkirim ke grup dan ke channel @caritemangobrol jika ada yang melanggar rules atau menyebarkan suati privasi orang bisa kalian laporkan ke admin atau ke owner @istmeleave
 """
